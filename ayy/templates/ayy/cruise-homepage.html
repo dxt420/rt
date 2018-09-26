@@ -1,0 +1,439 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+		<!--========================= FLEX SLIDER =====================-->
+        <section class="flexslider-container" id="flexslider-container-5">
+			
+        
+            <div class="flexslider slider" id="slider-5">
+                <ul class="slides">
+                    
+                    <li class="item-1 back-size" style="background:			linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url({% static 'ayy\images/cruise-slider-1.jpeg' %}) 50% 65%;
+	background-size:142%;
+	height:100%;">
+                    	<div class="meta">         
+                            <div class="container">
+                                <h2>Dubai Boat Tour</h2>
+                                <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis. Est atqui timeam mnesarchum at, pro an eros perpetua ullamcorper.</p>
+                                <span class="highlight-price">STARTING FROM 1200$ ONLY</span>
+                            </div><!-- end container -->  
+                        </div><!-- end meta -->
+                    </li><!-- end item-1 -->
+                    
+                    <li class="item-2 back-size" style="background:			linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url({% static 'ayy\images/cruise-slider-1.jpeg' %}) 50% 65%;
+	background-size:142%;
+	height:100%;">
+                        <div class=" meta">         
+                            <div class="container">
+                                <h2>Dubai Boat Tour</h2>
+                                <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis. Est atqui timeam mnesarchum at, pro an eros perpetua ullamcorper.</p>
+                                <span class="highlight-price">STARTING FROM 1200$ ONLY</span>
+                            </div><!-- end container -->  
+                        </div><!-- end meta -->
+                    </li><!-- end item-2 -->
+                   
+                </ul>
+            </div><!-- end slider -->
+            
+            <div class="search-tabs" id="search-tabs-5">
+            	<div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="tab-content">
+                                
+                                <div id="cruise" class="tab-pane active">
+                                    <form>
+                                        <div class="row">
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+                                                <div class="row">
+                                                
+                                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <input type="text" class="form-control" placeholder="From">
+                                                            <i class="fa fa-map-marker"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <input type="text" class="form-control" placeholder="To">
+                                                            <i class="fa fa-map-marker"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+        
+                                                </div><!-- end row -->								
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+                                                <div class="row">
+                                                
+                                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <input type="text" class="form-control dpd1" placeholder="Check In">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <input type="text" class="form-control dpd2" placeholder="Check Out">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+        
+                                                </div><!-- end row -->								
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                                                <div class="form-group right-icon">
+                                                    <select class="form-control">
+                                                    <option selected="">Adults</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    </select>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </div>
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 search-btn">
+                                                <button class="btn btn-orange">Search</button>
+                                            </div><!-- end columns -->
+                                            
+                                        </div><!-- end columns -->
+                                    </form>
+                                </div><!-- end cruises -->
+
+                            </div><!-- end tab-content -->
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end search-tabs -->
+            
+        </section><!-- end flexslider-container -->
+
+
+        <!--=============== CRUISE OFFERS ===============-->
+        <section id="cruise-offers" class="section-padding">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-sm-12">
+                    	<div class="page-heading">
+                        	<h2>Cruise Offers</h2>
+                            <hr class="heading-line">
+                        </div><!-- end page-heading -->
+                        
+                        <div class="owl-carousel owl-theme owl-custom-arrow" id="owl-cruise-offers">
+                        	
+                            <div>
+                                <div class="grid">
+                                    <div class="main-block cruise-block">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6 col-md-push-6 no-pd-l">
+                                                <div class="main-img cruise-img">
+                                                    <a href="cruise-detail-right-sidebar.html">
+                                                        <img src="{% static 'ayy\images\cruise-1.jpeg' %}" class="img-responsive" alt="cruise-img">
+                                                        <div class="cruise-mask">
+                                                            <p>7 Nights, 6 Days</p>
+                                                        </div><!-- end cruise-mask -->
+                                                    </a>
+                                                </div><!-- end cruise-img -->
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-sm-12 col-md-6 col-md-pull-6 no-pd-r">
+                                                <div class=" main-info cruise-info">
+                                                    <div class="main-title cruise-title">
+                                                        <a href="cruise-detail-right-sidebar.html">Spain Boat Tour</a>
+                                                        <p>From: Italy to Spain</p>
+                                                        <div class="rating">
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star grey"></i></span>
+                                                        </div><!-- end rating -->
+                                                        
+                                                        <span class="cruise-price">$950.00</span>
+                                                    </div><!-- end cruise-title -->
+                                                </div><!-- end cruise-info -->
+                                            </div><!-- end columns -->
+                                            
+                                        </div><!-- end row -->	
+                                    </div><!-- end cruise-block -->
+                                </div><!-- end grid -->
+                            	
+                                <div class="grid">
+                                    <div class="main-block cruise-block">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6 col-md-push-6 no-pd-l">
+                                                <div class="main-img cruise-img">
+                                                    <a href="cruise-detail-right-sidebar.html">
+                                                        <img src="{% static 'ayy\images\cruise-2.jpeg' %}" class="img-responsive" alt="cruise-img">
+                                                        <div class="cruise-mask">
+                                                            <p>7 Nights, 6 Days</p>
+                                                        </div><!-- end cruise-mask -->
+                                                    </a>
+                                                </div><!-- end cruise-img -->
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-sm-12 col-md-6 col-md-pull-6 no-pd-r">
+                                                <div class=" main-info cruise-info">
+                                                    <div class="main-title cruise-title">
+                                                        <a href="cruise-detail-right-sidebar.html">Spain Boat Tour</a>
+                                                        <p>From: Italy to Spain</p>
+                                                        <div class="rating">
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star grey"></i></span>
+                                                        </div><!-- end rating -->
+                                                        
+                                                        <span class="cruise-price">$950.00</span>
+                                                    </div><!-- end cruise-title -->
+                                                </div><!-- end cruise-info -->
+                                            </div><!-- end columns -->
+                                            
+                                        </div><!-- end row -->	
+                                    </div><!-- end cruise-block -->
+                                </div><!-- end grid -->
+                            </div>
+                            
+                            <div>
+                                <div class="grid">
+                                    <div class="main-block cruise-block">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6 col-md-push-6 no-pd-l">
+                                                <div class="main-img cruise-img">
+                                                    <a href="cruise-detail-right-sidebar.html">
+                                                        <img src="{% static 'ayy\images\cruise-3.jpeg' %}" class="img-responsive" alt="cruise-img">
+                                                        <div class="cruise-mask">
+                                                            <p>7 Nights, 6 Days</p>
+                                                        </div><!-- end cruise-mask -->
+                                                    </a>
+                                                </div><!-- end cruise-img -->
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-sm-12 col-md-6 col-md-pull-6 no-pd-r">
+                                                <div class=" main-info cruise-info">
+                                                    <div class="main-title cruise-title">
+                                                        <a href="cruise-detail-right-sidebar.html">Spain Boat Tour</a>
+                                                        <p>From: Italy to Spain</p>
+                                                        <div class="rating">
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star grey"></i></span>
+                                                        </div><!-- end rating -->
+                                                        
+                                                        <span class="cruise-price">$950.00</span>
+                                                    </div><!-- end cruise-title -->
+                                                </div><!-- end cruise-info -->
+                                            </div><!-- end columns -->
+                                            
+                                        </div><!-- end row -->	
+                                    </div><!-- end cruise-block -->
+                                </div><!-- end grid -->
+                            	
+                                <div class="grid">
+                                    <div class="main-block cruise-block">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6 col-md-push-6 no-pd-l">
+                                                <div class="main-img cruise-img">
+                                                    <a href="cruise-detail-right-sidebar.html">
+                                                        <img src="{% static 'ayy\images\cruise-4.jpeg' %}" class="img-responsive" alt="cruise-img">
+                                                        <div class="cruise-mask">
+                                                            <p>7 Nights, 6 Days</p>
+                                                        </div><!-- end cruise-mask -->
+                                                    </a>
+                                                </div><!-- end cruise-img -->
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-sm-12 col-md-6 col-md-pull-6 no-pd-r">
+                                                <div class=" main-info cruise-info">
+                                                    <div class="main-title cruise-title">
+                                                        <a href="cruise-detail-right-sidebar.html">Spain Boat Tour</a>
+                                                        <p>From: Italy to Spain</p>
+                                                        <div class="rating">
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star grey"></i></span>
+                                                        </div><!-- end rating -->
+                                                        
+                                                        <span class="cruise-price">$950.00</span>
+                                                    </div><!-- end cruise-title -->
+                                                </div><!-- end cruise-info -->
+                                            </div><!-- end columns -->
+                                            
+                                        </div><!-- end row -->	
+                                    </div><!-- end cruise-block -->
+                                </div><!-- end grid -->
+                            </div>
+                            
+                            <div>
+                                <div class="grid">
+                                    <div class="main-block cruise-block">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6 col-md-push-6 no-pd-l">
+                                                <div class="main-img cruise-img">
+                                                    <a href="cruise-detail-right-sidebar.html">
+                                                        <img src="{% static 'ayy\images\cruise-5.jpeg' %}" class="img-responsive" alt="cruise-img">
+                                                        <div class="cruise-mask">
+                                                            <p>7 Nights, 6 Days</p>
+                                                        </div><!-- end cruise-mask -->
+                                                    </a>
+                                                </div><!-- end cruise-img -->
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-sm-12 col-md-6 col-md-pull-6 no-pd-r">
+                                                <div class=" main-info cruise-info">
+                                                    <div class="main-title cruise-title">
+                                                        <a href="cruise-detail-right-sidebar.html">Spain Boat Tour</a>
+                                                        <p>From: Italy to Spain</p>
+                                                        <div class="rating">
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star grey"></i></span>
+                                                        </div><!-- end rating -->
+                                                        
+                                                        <span class="cruise-price">$950.00</span>
+                                                    </div><!-- end cruise-title -->
+                                                </div><!-- end cruise-info -->
+                                            </div><!-- end columns -->
+                                            
+                                        </div><!-- end row -->	
+                                    </div><!-- end cruise-block -->
+                                </div><!-- end grid -->
+                            	
+                                <div class="grid">
+                                    <div class="main-block cruise-block">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6 col-md-push-6 no-pd-l">
+                                                <div class="main-img cruise-img">
+                                                    <a href="cruise-detail-right-sidebar.html">
+                                                        <img src="{% static 'ayy\images\cruise-6.jpeg' %}" class="img-responsive" alt="cruise-img">
+                                                        <div class="cruise-mask">
+                                                            <p>7 Nights, 6 Days</p>
+                                                        </div><!-- end cruise-mask -->
+                                                    </a>
+                                                </div><!-- end cruise-img -->
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-sm-12 col-md-6 col-md-pull-6 no-pd-r">
+                                                <div class=" main-info cruise-info">
+                                                    <div class="main-title cruise-title">
+                                                        <a href="cruise-detail-right-sidebar.html">Spain Boat Tour</a>
+                                                        <p>From: Italy to Spain</p>
+                                                        <div class="rating">
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star orange"></i></span>
+                                                            <span><i class="fa fa-star grey"></i></span>
+                                                        </div><!-- end rating -->
+                                                        
+                                                        <span class="cruise-price">$950.00</span>
+                                                    </div><!-- end cruise-title -->
+                                                </div><!-- end cruise-info -->
+                                            </div><!-- end columns -->
+                                            
+                                        </div><!-- end row -->	
+                                    </div><!-- end cruise-block -->
+                                </div><!-- end grid -->
+                            </div>
+                            
+                        </div><!-- end owl-cruise-offers -->
+                        
+                        <div class="view-all text-center">
+                        	<a href="cruise-listing-right-sidebar.html" class="btn btn-orange">View All</a>
+                        </div><!-- end view-all -->
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+        	</div><!-- end container -->
+        </section><!-- end cruise-offers -->
+        
+        
+        <!--============== HIGHLIGHTS =============-->
+        <section id="highlights" class="highlights-2 highlights-grey"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="row">
+                            <div id="boxes">
+                            
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">  
+                                    <div class="highlight-box">
+                                        <div class="h-icon">
+                                            <span><i class="fa fa-plane"></i></span>
+                                        </div><!-- end h-icon -->
+                                        
+                                        <div class="h-text">
+                                            <span class="numbers">2496</span>
+                                            <p>Outstanding Tours</p>
+                                        </div><!-- end h-text -->                           
+                                    </div><!-- end highlight-box -->                       
+                                </div><!-- end columns -->
+                                
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">  
+                                    <div class="highlight-box">
+                                        <div class="h-icon">
+                                            <span><i class="fa fa-ship"></i></span>
+                                        </div><!-- end h-icon -->
+                                        
+                                        <div class="h-text cruise">
+                                            <span class="numbers">1906</span>
+                                            <p>Worldwide Cruise</p> 
+                                        </div><!-- end h-text -->                           
+                                    </div><!-- end highlight-box -->                       
+                                </div><!-- end columns -->
+                                
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">  
+                                    <div class="highlight-box">
+                                        <div class="h-icon">
+                                            <span><i class="fa fa-taxi"></i></span>
+                                        </div><!-- end h-icon -->
+                                        
+                                        <div class="h-text taxi">
+                                            <span class="numbers">2033</span>
+                                            <p>Luxury Car Booking</p>   
+                                        </div><!-- end h-text -->                           
+                                    </div><!-- end highlight-box -->                       
+                                </div><!-- end columns -->
+                                
+                            </div><!-- end boxes -->
+                    	</div><!-- end row -->
+            		</div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end highlights -->
+        
+        
+        <!--======= OFFER BANNER ======-->
+        <section id="cruise-offer-banner"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 cruise-offer-img text-center">
+                        <img src="{% static 'ayy\images\best-offer-cruise.jpeg' %}" class="img-responsive" alt="offer-img">
+                    </div><!-- end columns -->
+                    
+                    <div class="col-sm-6 cruise-offer-text">
+                        <h2>Best Offer</h2>
+                        <h3 class="cruise-tour">Bodrum Alacati To Istanbul Tour</h3>
+                        <p class="cruise-offer-dur">7 Nights, 6 Days</p>
+                        <p class="cruise-offer-price">From $1,441</p>
+                        <a href="cruise-detail-right-sidebar.html" class="btn btn-black">Click to View</a>
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end offer-banner -->
+        
+    {% endblock %}

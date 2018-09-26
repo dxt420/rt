@@ -1,0 +1,654 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+		<!--========================= FLEX SLIDER =====================-->
+        <section class="flexslider-container" id="flexslider-container-3">
+     
+        
+            <div class="flexslider slider" id="slider-3">
+                <ul class="slides">
+                    
+                    <li class="item-1 back-size" style="background:			linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url({% static 'ayy\images/hotel-slider-1.jpeg' %}) 50% 65%;
+	background-size:cover;
+	height:100%;">
+                    </li><!-- end item-1 -->
+                    
+                    <li class="item-2 back-size" style="background:			linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url({% static 'ayy\images/hotel-slider-1.jpeg' %}) 50% 65%;
+	background-size:cover;
+	height:100%;">
+                    </li><!-- end item-2 -->
+                   
+                </ul>
+            </div><!-- end slider -->
+            
+            <div class="search-tabs" id="search-tabs-3">
+            	<div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 no-pd-r">
+                        
+                            <ul class="nav nav-tabs">
+                                <li><a href="#flights" data-toggle="tab"><span><i class="fa fa-plane"></i></span><span class="st-text">Flights</span></a></li>
+                                <li class="active"><a href="#hotels" data-toggle="tab"><span><i class="fa fa-building"></i></span><span class="st-text">Hotels</span></a></li>
+                                <li><a href="#tours" data-toggle="tab"><span><i class="fa fa-suitcase"></i></span><span class="st-text">Tours</span></a></li>
+                                <li><a href="#cruise" data-toggle="tab"><span><i class="fa fa-ship"></i></span><span class="st-text">Cruise</span></a></li>
+                                <li><a href="#cars" data-toggle="tab"><span><i class="fa fa-car"></i></span><span class="st-text">Cars</span></a></li>
+                            </ul>
+
+                            <div class="tab-content">
+
+                                <div id="flights" class="tab-pane">
+                                    <form>
+                                        <div class="row">
+
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="row">
+                                                
+                                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <label>From</label>
+                                                            <input type="text" class="form-control" placeholder="City, Country">
+                                                            <i class="fa fa-map-marker"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <label>To</label>
+                                                            <input type="text" class="form-control" placeholder="City, Country">
+                                                            <i class="fa fa-map-marker"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+        
+                                                </div><!-- end row -->								
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="row">
+                                                
+                                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <label>Check In</label>
+                                                            <input type="text" class="form-control dpd1" placeholder="mm/dd/yy">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <label>Check Out</label>
+                                                            <input type="text" class="form-control dpd2" placeholder="mm/dd/yy">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+        
+                                                </div><!-- end row -->								
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group right-icon">
+                                                    <label>Adults</label>
+                                                    <select class="form-control">
+                                                        <option selected="">01</option>
+                                                        <option>02</option>
+                                                        <option>03</option>
+                                                        <option>04</option>
+                                                    </select>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </div>
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 search-btn">
+                                                <button class="btn btn-orange">Search</button>
+                                            </div><!-- end columns -->
+                                            
+                                        </div><!-- end row -->
+                                    </form>
+                                </div><!-- end flights -->
+                                
+                                <div id="hotels" class="tab-pane in active">
+                                    <form>
+                                        <div class="row">
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="row">
+                                                
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <div class="form-group left-icon">
+                                                            <label>Check In</label>
+                                                            <input type="text" class="form-control dpd1" placeholder="Check In">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <div class="form-group left-icon">
+                                                            <label>Check Out</label>
+                                                            <input type="text" class="form-control dpd2" placeholder="Check Out">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+        
+                                                </div><!-- end row -->								
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="row">
+                                                
+                                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                                        <div class="form-group right-icon">
+                                                            <label>Rooms</label>
+                                                            <select class="form-control">
+                                                                <option selected="">01</option>
+                                                                <option>02</option>
+                                                                <option>03</option>
+                                                                <option>04</option>
+                                                            </select>
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                                        <div class="form-group right-icon">
+                                                            <label>Adults</label>
+                                                            <select class="form-control">
+                                                                <option selected="">01</option>
+                                                                <option>02</option>
+                                                                <option>03</option>
+                                                                <option>04</option>
+                                                            </select>
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                                        <div class="form-group right-icon">
+                                                            <label>Kids</label>
+                                                            <select class="form-control">
+                                                                <option selected="">01</option>
+                                                                <option>02</option>
+                                                                <option>03</option>
+                                                                <option>04</option>
+                                                            </select>
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                </div><!-- end row -->
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 search-btn">
+                                                <button class="btn btn-orange">Search</button>
+                                            </div><!-- end columns -->
+                                            
+                                        </div><!-- end row -->
+                                    </form>
+                                </div><!-- end hotels -->
+
+                                <div id="tours" class="tab-pane">
+                                    <form>
+                                        <div class="row">
+                                        
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group left-icon">
+                                                    <label>Your Destination</label>
+                                                    <input type="text" class="form-control" placeholder="City, Country">
+                                                    <i class="fa fa-map-marker"></i>
+                                                </div>
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group right-icon">
+                                                    <label>Month</label>
+                                                    <select class="form-control">
+                                                        <option selected="">January</option>
+                                                        <option>February</option>
+                                                        <option>March</option>
+                                                        <option>April</option>
+                                                        <option>May</option>
+                                                        <option>June</option>
+                                                        <option>July</option>
+                                                        <option>August</option>
+                                                        <option>September</option>
+                                                        <option>October</option>
+                                                        <option>November</option>
+                                                        <option>December</option>
+                                                    </select>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </div>
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="row">
+    
+                                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                                        <div class="form-group right-icon">
+                                                            <label>Adults</label>
+                                                            <select class="form-control">
+                                                                <option selected="">01</option>
+                                                                <option>02</option>
+                                                                <option>03</option>
+                                                                <option>04</option>
+                                                            </select>
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                                        <div class="form-group right-icon">
+                                                            <label>Kids</label>
+                                                            <select class="form-control">
+                                                                <option selected="">01</option>
+                                                                <option>02</option>
+                                                                <option>03</option>
+                                                                <option>04</option>
+                                                            </select>
+                                                            <i class="fa fa-angle-down"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                </div><!-- end row -->
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 search-btn">
+                                                <button class="btn btn-orange">Search</button>
+                                            </div><!-- end columns -->
+                                            
+                                        </div><!-- end row -->
+                                    </form>
+                                </div><!-- end tours -->
+                                
+                                <div id="cruise" class="tab-pane">
+                                    <form>
+                                        <div class="row">
+
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="row">
+                                                
+                                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <label>From</label>
+                                                            <input type="text" class="form-control" placeholder="City, Country">
+                                                            <i class="fa fa-map-marker"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <label>To</label>
+                                                            <input type="text" class="form-control" placeholder="City, Country">
+                                                            <i class="fa fa-map-marker"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+        
+                                                </div><!-- end row -->								
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="row">
+                                                
+                                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <label>Check In</label>
+                                                            <input type="text" class="form-control dpd1" placeholder="mm/dd/yy">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <label>Check Out</label>
+                                                            <input type="text" class="form-control dpd2" placeholder="mm/dd/yy">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+        
+                                                </div><!-- end row -->								
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group right-icon">
+                                                    <label>Adults</label>
+                                                    <select class="form-control">
+                                                        <option selected="">01</option>
+                                                        <option>02</option>
+                                                        <option>03</option>
+                                                        <option>04</option>
+                                                    </select>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </div>
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 search-btn">
+                                                <button class="btn btn-orange">Search</button>
+                                            </div><!-- end columns -->
+                                            
+                                        </div><!-- end row -->
+                                    </form>
+                                </div><!-- end cruises -->
+
+                                <div id="cars" class="tab-pane">
+                                    <form>					
+                                        <div class="row">
+                                        
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="row">
+                                                
+                                                    <div class="col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <label>Country</label>
+                                                            <input type="text" class="form-control" placeholder="Country">
+                                                            <i class="fa fa-globe"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                    <div class="col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <label>City</label>
+                                                            <input type="text" class="form-control" placeholder="City">
+                                                            <i class="fa fa-map-marker"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                    <div class="col-sm-12 col-md-12">
+                                                        <div class="form-group left-icon">
+                                                            <label>Your Location</label>
+                                                            <input type="text" class="form-control" placeholder="Location">
+                                                            <i class="fa fa-street-view"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                </div><!-- end row -->
+                                            </div><!-- end columns -->
+                                            
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="row">
+                                                
+                                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <label>Check In</label>
+                                                            <input type="text" class="form-control dpd1" placeholder="mm/dd/yy">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                                        <div class="form-group left-icon">
+                                                            <label>Check Out</label>
+                                                            <input type="text" class="form-control dpd2" placeholder="mm/dd/yy">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+                                                    
+                                                </div><!-- end row -->
+                                            </div><!-- end columns -->
+    
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 search-btn">
+                                                <button class="btn btn-orange">Search</button>
+                                            </div><!-- end columns -->
+                                            
+                                        </div><!-- end row -->					
+                                    </form>
+                                </div><!-- end cars -->
+                                
+                                
+                            </div><!-- end tab-content -->
+
+                        </div><!-- end columns -->
+                        
+                        <div class="hidden-xs hidden-sm col-md-6 no-pd-l">
+                            <div class="welcome-message">
+                                <h2>Find Your Perfect Plan</h2>
+                                <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis. Est atqui timeam mnesarchum at, pro an eros perpetua ullamcorper, imeam mnesarchum at, pro an eros perpetua ullamcorper.</p>
+                                <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.</p>
+                                <a href="#" class="btn btn-w-border">Explore More</a>
+                            </div>
+                         </div>
+                                 
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end search-tabs -->
+            
+        </section><!-- end flexslider-container -->
+		
+        
+        <!--======================= BEST FEATURES ======================-->
+        <section id="best-features" class="banner-padding orange-features">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-sm-6 col-md-3">
+                    	<div class="b-feature-block">
+                    		<span><i class="fa fa-dollar"></i></span>
+                        	<h3>Best Price Guarantee</h3>
+                            <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.</p>
+                        </div><!-- end b-feature-block -->
+                   </div><!-- end columns -->
+                   
+                   <div class="col-sm-6 col-md-3">
+                    	<div class="b-feature-block">
+                    		<span><i class="fa fa-lock"></i></span>
+                        	<h3>Safe and Secure</h3>
+                            <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.</p>
+                        </div><!-- end b-feature-block -->
+                   </div><!-- end columns -->
+                   
+                   <div class="col-sm-6 col-md-3">
+                    	<div class="b-feature-block">
+                    		<span><i class="fa fa-thumbs-up"></i></span>
+                        	<h3>Best Travel Agents</h3>
+                            <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.</p>
+                        </div><!-- end b-feature-block -->
+                   </div><!-- end columns -->
+                   
+                   <div class="col-sm-6 col-md-3">
+                    	<div class="b-feature-block">
+                    		<span><i class="fa fa-bars"></i></span>
+                        	<h3>Travel Guidelines</h3>
+                            <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis.</p>
+                        </div><!-- end b-feature-block -->
+                   </div><!-- end columns -->
+                </div><!-- end row -->
+        	</div><!-- end container -->
+        </section><!-- end best-features -->
+        
+		
+        <!--=============== HOTEL OFFERS ===============-->
+        <section id="hotel-offers" class="section-padding">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-sm-12">
+                    	<div class="page-heading white-heading">
+                        	<h2>Hotels Offers</h2>
+                            <hr class="heading-line">
+                        </div><!-- end page-heading -->
+                        
+                        <div class="owl-carousel owl-theme owl-custom-arrow" id="owl-hotel-offers">
+                            
+                            <div class="item">
+                                <div class="main-block hotel-block">
+                                    <div class="main-img">
+                                    	<a href="{% url 'ayy:hoteldetail' %}">
+                                        	<img src="{% static 'ayy\images\hotel-1.jpeg' %}" class="img-responsive" alt="hotel-img">
+                                        </a>
+                                        <div class="main-mask">
+                                        	<ul class="list-unstyled list-inline offer-price-1">
+                                            	<li class="price">$568.00<span class="divider">|</span><span class="pkg">Avg/Night</span></li>
+                                                <li class="rating">
+                                                	<span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star lightgrey"></i></span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end main-mask -->
+                                    </div><!-- end offer-img -->
+                                    
+                                    <div class="main-info hotel-info">
+                                    	<div class="arrow">
+                                        	<a href="{% url 'ayy:hoteldetail' %}"><span><i class="fa fa-angle-right"></i></span></a>
+                                        </div><!-- end arrow -->
+                                        
+                                    	<div class="main-title hotel-title">
+                                            <a href="{% url 'ayy:hoteldetail' %}">Herta Berlin Hotel</a>
+                                            <p>From: Scotland</p>
+                                        </div><!-- end hotel-title -->
+                                    </div><!-- end hotel-info -->
+                                </div><!-- end hotel-block -->
+                            </div><!-- end item -->
+                        	
+                            <div class="item">
+                                <div class="main-block hotel-block">
+                                    <div class="main-img">
+                                    	<a href="{% url 'ayy:hoteldetail' %}">
+                                        	<img src="{% static 'ayy\images\hotel-2.jpeg' %}" class="img-responsive" alt="hotel-img">
+                                        </a>
+                                        <div class="main-mask">
+                                        	<ul class="list-unstyled list-inline offer-price-1">
+                                            	<li class="price">$568.00<span class="divider">|</span><span class="pkg">Avg/Night</span></li>
+                                                <li class="rating">
+                                                	<span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star lightgrey"></i></span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end main-mask -->
+                                    </div><!-- end offer-img -->
+                                    
+                                    <div class="main-info hotel-info">
+                                    	<div class="arrow">
+                                        	<a href="{% url 'ayy:hoteldetail' %}"><span><i class="fa fa-angle-right"></i></span></a>
+                                        </div><!-- end arrow -->
+                                        
+                                    	<div class="main-title hotel-title">
+                                            <a href="{% url 'ayy:hoteldetail' %}">Roosevelt Hotel</a>
+                                            <p>From: Germany</p>
+                                        </div><!-- end hotel-title -->
+                                    </div><!-- end hotel-info -->
+                                </div><!-- end hotel-block -->
+                            </div><!-- end item -->
+                            
+                            <div class="item">
+                                <div class="main-block hotel-block">
+                                    <div class="main-img">
+                                    	<a href="{% url 'ayy:hoteldetail' %}">
+                                        	<img src="{% static 'ayy\images\hotel-3.jpeg' %}" class="img-responsive" alt="hotel-img">
+                                        </a>
+                                        <div class="main-mask">
+                                        	<ul class="list-unstyled list-inline offer-price-1">
+                                            	<li class="price">$568.00<span class="divider">|</span><span class="pkg">Avg/Night</span></li>
+                                                <li class="rating">
+                                                	<span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star lightgrey"></i></span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end main-mask -->
+                                    </div><!-- end offer-img -->
+                                    
+                                    <div class="main-info hotel-info">
+                                    	<div class="arrow">
+                                        	<a href="{% url 'ayy:hoteldetail' %}"><span><i class="fa fa-angle-right"></i></span></a>
+                                        </div><!-- end arrow -->
+                                        
+                                    	<div class="main-title hotel-title">
+                                            <a href="{% url 'ayy:hoteldetail' %}">Hotel Fort De</a>
+                                            <p>From: Austria</p>
+                                        </div><!-- end hotel-title -->
+                                    </div><!-- end hotel-info -->
+                                </div><!-- end hotel-block -->
+                            </div><!-- end item -->
+                            
+                            <div class="item">
+                                <div class="main-block hotel-block">
+                                    <div class="main-img">
+                                        <a href="{% url 'ayy:hoteldetail' %}">
+                                        	<img src="{% static 'ayy\images\hotel-4.jpeg' %}" class="img-responsive" alt="hotel-img">
+                                        </a>
+                                        <div class="main-mask">
+                                        	<ul class="list-unstyled list-inline offer-price-1">
+                                            	<li class="price">$568.00<span class="divider">|</span><span class="pkg">Avg/Night</span></li>
+                                                <li class="rating">
+                                                	<span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star lightgrey"></i></span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end main-mask -->
+                                    </div><!-- end offer-img -->
+                                    
+                                    <div class="main-info hotel-info">
+                                    	<div class="arrow">
+                                        	<a href="{% url 'ayy:hoteldetail' %}"><span><i class="fa fa-angle-right"></i></span></a>
+                                        </div><!-- end arrow -->
+                                        
+                                    	<div class="main-title hotel-title">
+                                            <a href="{% url 'ayy:hoteldetail' %}">Roosevelt Hotel</a>
+                                            <p>From: Germany</p>
+                                        </div><!-- end hotel-title -->
+                                    </div><!-- end hotel-info -->
+                                </div><!-- end hotel-block -->
+                            </div><!-- end item -->
+                            
+                        </div><!-- end owl-hotel-offers -->
+                        
+                        <div class="view-all text-center">
+                        	<a href="hotel-grid-right-sidebar.html" class="btn btn-orange">View All</a>
+                        </div><!-- end view-all -->
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+        	</div><!-- end container -->
+        </section><!-- end hotel-offers -->
+
+		
+        <!--=============== LUXURY ROOMS ===============-->
+        <section id="luxury-rooms" class="section-padding">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-sm-12 col-md-12 col-lg-6 luxury-img luxury-room-imgs">
+                        <div class="row">
+                        	<div class="col-xs-6 col-sm-6 luxury-room-block">
+                            	<a href="images\luxury-room-1.jpeg' %}" title="image-7" class="with-caption gallery image-link">
+                                <img class="img-responsive" src="images\luxury-room-1.jpeg' %}" alt="luxury-room-img">
+                                </a>
+                            </div>
+                            
+                            <div class="col-xs-6 col-sm-6 luxury-room-block">
+                            	<a href="images\luxury-room-2.jpeg' %}" title="image-7" class="with-caption gallery image-link">
+                                <img class="img-responsive" src="images\luxury-room-2.jpeg' %}" alt="luxury-room-img">
+                                </a>
+                            </div>
+                            
+                            <div class="col-xs-6 col-sm-6 luxury-room-block">
+                            	<a href="images\luxury-room-3.jpeg' %}" title="image-7" class="with-caption gallery image-link">
+                                <img class="img-responsive" src="images\luxury-room-3.jpeg' %}" alt="luxury-room-img">
+                                </a>
+                            </div>
+                            
+                            <div class="col-xs-6 col-sm-6 luxury-room-block">
+                            	<a href="images\luxury-room-4.jpeg' %}" title="image-7" class="with-caption gallery image-link">
+                                <img class="img-responsive" src="images\luxury-room-4.jpeg' %}" alt="luxury-room-img">
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div><!-- end columns -->
+                    
+                    <div class="col-sm-12 col-md-12 col-lg-6 luxury-text luxury-room-text">
+                    	<h2>Luxurious Rooms</h2>
+                        <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri. Veniam delectus ei vis. Est atqui timeam mnesarchum at, pro an eros perpetua ullamcorper Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri.</p>
+                        <a href="{% url 'ayy:hoteldetail' %}" class="btn btn-black">From $99/Day</a>
+                        <a href="{% url 'ayy:hoteldetail' %}" class="btn btn-o-border">View Details</a>
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+        	</div><!-- end container -->
+        </section><!-- end luxury-rooms -->
+                    
+{% endblock %}
